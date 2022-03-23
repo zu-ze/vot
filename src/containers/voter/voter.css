@@ -1,0 +1,76 @@
+.vot__voter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vot__voter-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vot__voter-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.vot__voter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vot__voter-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 60px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.vot__voter-content p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-align: left;
+}
+
+.vot__voter-content h3 {
+    color: var(--subtext-color);
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 850px) {
+    .vot__voter {
+        flex-direction: column;
+    }
+}
+
+@media screen  and (max-width: 650px) {
+    .vot__voter-content h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .vot__voter-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .vot__voter-content h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .vot__voter-content h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
